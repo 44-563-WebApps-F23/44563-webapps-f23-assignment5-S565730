@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <title>About cities</title>
+  <link rel="stylesheet" type="text/css" href="basic.html">
+  <link rel="stylesheet" type="text/css" href="advanced.html">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
@@ -11,9 +13,49 @@
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+      
+         .th {
+          background-color:white;
+          color: white;
+      }
+
+      .table tbody tr:hover {
+          background-color:white;
+      }
+  </style>
 </head>
 <body>
 <h4>Visit cities with rachana sri mandadi</h4>
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+
+  <a class="navbar-brand" href="#">Different cities</a>
+
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+
+      <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item">
+              <a class="nav-link active" href="basic.html" target="_blank">Basic</a>
+          </li>
+
+          <li class="nav-item">
+              <a class="nav-link" href="advanced.html" target="_blank">Advanced</a>
+          </li>
+
+      </ul>
+
+  </div>
+</nav>
 <div class="container">
     <div class="row">
         <div class=" col-sm-2">M</div>
@@ -39,16 +81,160 @@
 <div class="container">
   <div class="row">
       <div class="col-md-2">
-          <img src="https://i.natgeofe.com/k/5b396b5e-59e7-43a6-9448-708125549aa1/new-york-statue-of-liberty.jpg"
-              alt="New York"  class="img-thumbnail" >
+          <img src="Cities/new-york.jpg"
+              alt="New York" width="400" height="300" class="img-thumbnail" >
       </div>
       <div class="col-md-2">
-          <img src="https://www.thecanyon.com/images/uploads/HAACBbNa.jpg" alt="Arizona"  class="img-thumbnail">
+          <img src="https://www.thecanyon.com/images/uploads/HAACBbNa.jpg" alt="Arizona" width="400" height="300" class="img-thumbnail">
       </div>
       <div class="col-md-2">
-          <img src="https://gtexascatering.com/wp-content/uploads/2018/10/The-After-Party.jpg" alt="Dallas" class="img-thumbnail">
+          <img src="https://gtexascatering.com/wp-content/uploads/2018/10/The-After-Party.jpg" alt="Dallas" width="400" height="300"class="img-thumbnail">
       </div>
   </div>
 </div>
+<div class="container">
+  <caption>Table about Cities, Rivers, and Trees based on Letters</caption>
+  <table class="table table-striped table-info">
+      <thead class="table-dark">
+          <tr>
+              <th scope="col">Letter</th>
+              <th scope="col">City</th>
+              <th scope="col">River</th>
+              <th scope="col">Tree</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <th scope="row">M</th>
+              <td>Michigan</td>
+              <td>Detroit</td>
+              <td>Sugar Maple</td>
+          </tr>
+          <tr>
+              <th scope="row">A</th>
+              <td>Arizona</td>
+              <td>Colorado</td>
+              <td>Palo verde</td>
+          </tr>
+          <tr>
+              <th scope="row">N</th>
+              <td>New York</td>
+              <td>Hudson</td>
+              <td>Honeylocust</td>
+          </tr>
+          <tr>
+              <th scope="row">D</th>
+              <td>Dallas</td>
+              <td>Trinity</td>
+              <td>Pecan</td>
+          </tr>
+          <tr>
+              <th scope="row">A</th>
+              <td>Alaska</td>
+              <td>Yukon</td>
+              <td>Paper britch</td>
+          </tr>
+          <tr>
+              <th scope="row">Di</th>
+              <td>Diamond bar</td>
+              <td>Santa Anita Creek</td>
+              <td>Apple</td>
+          </tr>
+      </tbody>
+  </table>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">BUTTONS SECTION</a>
+</nav>
+<div class="container mt-5">
+  <div class="btn-toolbar" role="toolbar" aria-label="Button Toolbar">
+
+      <div class="btn-group mr-2" role="group" aria-label="Success Buttons">
+          <button type="button" class="btn btn-lg btn-success">M</button>
+          <button type="button" class="btn btn-lg btn-success">A</button>
+          <button type="button" class="btn btn-lg btn-success">N</button>
+      </div>
+      <div class="btn-group mr-2" role="group" aria-label="Warning Buttons">
+          <button type="button" class="btn btn-lg btn-warning">D</button>
+          <button type="button" class="btn btn-lg btn-warning">A</button>
+      </div>
+      <div class="btn-group" role="group" aria-label="Danger Buttons">
+          <button type="button" class="btn btn-lg btn-danger">DI</button>
+      </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<div class="container">
+  <form>
+      <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone.</small>
+      </div>
+      <div class="form-group">
+          <label for="city">City</label>
+          <input type="text" class="form-control" id="city" placeholder="Enter your city">
+      </div>
+      <div class="form-check">
+          <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="newsletter">
+              <label class="form-check-label" for="newsletter">Sign up for newsletter?</label>
+          </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+<br>
+<br>
+<br>
+<br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="BonusImages/MUMBAI.jpg" class="card-img-top" alt="1st City">
+                    <div class="card-body">
+                        <h5 class="card-title">MUMBAI</h5>
+                        <p class="card-text">Mumbai lies on the Konkan coast on the west coast of India and has a deep natural harbour. 
+                            In 2008, Mumbai was named an alpha world city. It is also the wealthiest city in India, 
+                            and has the highest number of millionaires and billionaires among all cities in India.
+                        </p>
+                        <a href="https://mumbaicity.gov.in/" target="_blank" class="btn btn-primary">For More details click here</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="BonusImages/HYDERABAD.jpg" class="card-img-top" alt="2nd Image">
+                    <div class="card-body">
+                        <h5 class="card-title">HYDERABAD</h5>
+                        <p class="card-text">Hyderabad, is the capital of the state Telangana, India. 
+                             It also goes by its sobriquet City of Pearls. 
+                            As of 2010 it is the sixth most populous city and sixth-most populous urban agglomeration in India.
+                        </p>
+                        <a href="https://hyderabad.telangana.gov.in/" target="_blank" class="btn btn-primary">For More details click here</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="BonusImages/AGRA.jpg" class="card-img-top" alt="3rd City">
+                    <div class="card-body">
+                        <h5 class="card-title">AGRA</h5>
+                        <p class="card-text">Agra is one of the most populous cities in Uttar Pradesh,
+                            and the 24th most populous city in India.
+                            Agra is a major tourist destination because of its many Mughal-era buildings, 
+                            most notably the Taj Mahal, Agra Fort and Fatehpur Sikri, 
+                            all three of which are UNESCO World Heritage Sites.
+                        </p>
+                        <a href="https://agra.nic.in/" target="_blank" class="btn btn-primary">For More details click here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
